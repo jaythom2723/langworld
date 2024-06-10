@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:root {
+    --body-text-font: "Noto Serif", serif;
+    --subtext-font: "PT Serif", serif;
+    --header-font: "Gentium Plus", serif;
+    
+    font-family: var(--body-text-font);
+}
+
+.subtext {
+    font-family: var(--subtext-font);
+    color: grey;
+    font-style: italic;
+}
+
+header {
+    font-family: var(--header-font) !important;
+    padding: 8px;
+}
+
+#root-header {
+    height: 10vh;
+    display: flex;
+    box-shadow: 0 0px 15px darkgrey;
+}
+
+#root-header div {
+    display: flex;
+    min-width: 75vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#root-header nav {
+    width: 100vw;
+    height: 100%;
+}
+
+#nav-list {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#nav-list li {
+    height: 100%;
+    position: relative;
+}
+
+#nav-list li a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+/* CSS */
+.button-35 {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+main {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.section {
+    margin-top: 5vh;
+}
+
+.section header {
+    border-bottom: 2px solid grey;
+}
+
+.section header h2 {
+    margin-left: 2.5%;
+}
+
+.section .body {
+    margin: 0 2.5% !important;
+    display: block;
+    text-align: left;
+    padding: 8px 0;
+}
+
+.grid {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 75% 75% 75% 75%;
+    list-style: none;
+}
+
+.grid li {
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms background;
+}
+
+.grid .clickable:hover {
+    cursor: pointer;
+    background: black;
+    color: white !important;
+}
+
+.flex-box {
+    display: flex !important;
+}
+
+.row {
+    flex-direction: row;
+}
+
+#dates {
+    list-style: none;
+    border-right: double medium black;
+    min-width: 10.5%;
+    padding: 0 !important;
+}
+
+#dates li {
+    padding-top: 8px;
+    border-bottom: thin black solid;
+}
+
+#descriptions {
+    list-style: none;
+    width: 100%;
+    padding: 0 !important;
+}
+
+#descriptions li {
+    padding-top: 8px;
+    padding-left: 5%;
+    border-bottom: thin black solid !important;
+}
+
+#timeline .body {
+    padding: 0 !important;
+}
+
+#timeline .body ul {
+    padding-top: 8px;
+}
